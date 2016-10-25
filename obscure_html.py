@@ -11,10 +11,10 @@ class ObscureHtmlCommand(sublime_plugin.TextCommand):
       fuzz = []
       for c in text:
         if randint(0, 9) < 5:
-          # ascii encode
+          # decimal entity encode
           fuzz.append('&#%s;' % str(ord(c)))
         else:
-          # hex encode
+          # hex entity encode
           fuzz.append('&#%s;' % hex(ord(c)).lstrip('0'))
       self.view.replace(edit, sel, ''.join(fuzz))
     return
