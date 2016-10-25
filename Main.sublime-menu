@@ -1,0 +1,11 @@
+[
+    {
+        "id": "edit",
+        "children":
+        [
+            { "id": "wrap" },
+            { "caption": "Obscure HTML" },
+            { "command": "obscure_html" }
+        ]
+    }
+]
